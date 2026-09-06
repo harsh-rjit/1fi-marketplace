@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/1fi-marketplace/static/css/main.84428572.css",
+    "main.js": "/1fi-marketplace/static/js/main.0e66de85.js",
+    "static/js/453.bcef3a8e.chunk.js": "/1fi-marketplace/static/js/453.bcef3a8e.chunk.js",
+    "index.html": "/1fi-marketplace/index.html",
+    "main.84428572.css.map": "/1fi-marketplace/static/css/main.84428572.css.map",
+    "main.0e66de85.js.map": "/1fi-marketplace/static/js/main.0e66de85.js.map",
+    "453.bcef3a8e.chunk.js.map": "/1fi-marketplace/static/js/453.bcef3a8e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84428572.css",
+    "static/js/main.0e66de85.js"
+  ]
+}
