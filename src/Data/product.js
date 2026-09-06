@@ -4,8 +4,7 @@ const products = [
     name: "Samsung Galaxy S24",
     brand: "Samsung",
     price: 74999,
-    image:
-    "/images/images.jpg",
+    image: "https://m.media-amazon.com/images/I/71SVRdsgY-L.jpg",
     variants: [
     { name: "128GB", price: 74999 },
     { name: "256GB", price: 79999 }
@@ -32,8 +31,7 @@ const products = [
     name: "OnePlus 12",
     brand: "OnePlus",
     price: 64999,
-    image:
-    "/images/1.jpg",
+    image: "https://oasis.opstatics.com/content/dam/oasis/page/2023/cn/12/12-black.png",
     variants: [
     { name: "256GB", price: 64999 },
     { name: "512GB", price: 69999 }
@@ -46,8 +44,7 @@ const products = [
     name: "Google Pixel 8",
     brand: "Google",
     price: 58999,
-    image:
-    "/images/2.jpg",
+    image: "https://etimg.etb2bimg.com/photo/104173103.cms",
     variants: [
     { name: "128GB", price: 58999 },
     { name: "256GB", price: 63999 }
