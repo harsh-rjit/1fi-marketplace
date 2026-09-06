@@ -1,70 +1,193 @@
-# Getting Started with Create React App
+# 1Fi Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive **1Fi Marketplace** web application built as part of the 1Fi SDE Intern Assignment.
 
-## Available Scripts
+The application provides a marketplace experience where users can browse products, select product variants, explore EMI plans, calculate monthly EMI amounts, and proceed with their selected EMI plan.
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+https://harsh-rjit.github.io/1fi-marketplace/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📦 GitHub Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+https://github.com/harsh-rjit/1fi-marketplace
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Product listing with reusable product cards
+* Product images, brand names and pricing
+* Product search by name or brand
+* Product variant selection
+* Multiple EMI duration options
+* Dynamic monthly EMI calculation
+* Product details modal
+* EMI plan selection
+* EMI confirmation screen
+* Loading state while fetching products
+* Error handling for failed product loading
+* Empty state when no products match the search
+* Responsive mobile-friendly UI
+* Reusable React components
+* Mock API implementation for product data
+* State management using React Hooks
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React.js
+* JavaScript
+* HTML5
+* CSS3
+* React Hooks
+* Create React App
+* Git & GitHub
+* GitHub Pages
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+src/
+├── Components/
+│   ├── productCard.js
+│   └── productGrid.js
+│
+├── Data/
+│   ├── product.js
+│   ├── productApi.js
+│   └── emi.js
+│
+├── pages/
+│   └── marketplace.js
+│
+├── App.js
+├── App.css
+└── index.css
+```
 
-### `npm run eject`
+## 🔄 Application Flow
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Products are loaded through a mock API.
+2. A loading state is displayed while the data is being fetched.
+3. Products are displayed using reusable product cards.
+4. Users can search for products or brands.
+5. Users can open product details.
+6. Users can select a product variant.
+7. Users can select an EMI duration.
+8. The monthly EMI is calculated dynamically.
+9. Users can proceed with their selected EMI plan.
+10. A confirmation summary displays the selected product, variant, price and EMI plan.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 💳 EMI Calculation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application uses a simple mock EMI calculation for the assignment:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```text
+Monthly EMI = Product Price / EMI Duration
+```
 
-## Learn More
+For example:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```text
+Product Price = ₹79,999
+EMI Duration = 24 months
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Monthly EMI ≈ ₹3,333
+```
 
-### Code Splitting
+The calculation is performed dynamically whenever the user changes the product variant or EMI duration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔌 Mock API
 
-### Analyzing the Bundle Size
+Product data is separated from the UI and loaded through a mock API function.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A small delay is intentionally added to simulate an asynchronous API request and demonstrate loading and error states.
 
-### Making a Progressive Web App
+This structure allows the mock API to be replaced with a real backend/API in the future without significantly changing the UI components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Responsive Design
 
-### Advanced Configuration
+The marketplace is designed with a mobile-first approach and adapts to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Desktop screens
+* Tablets
+* Mobile devices
 
-### Deployment
+The product grid automatically adjusts the number of columns according to screen size.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ⚙️ Run Locally
 
-### `npm run build` fails to minify
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/harsh-rjit/1fi-marketplace.git
+```
+
+Move into the project directory:
+
+```bash
+cd 1fi-marketplace
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The application will run locally at:
+
+```text
+http://localhost:3000
+```
+
+## 📦 Production Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## 🌐 Deployment
+
+The project is deployed using **GitHub Pages** with the `gh-pages` package.
+
+To deploy the latest version:
+
+```bash
+npm run deploy
+```
+
+## 🎯 Assignment Requirements Covered
+
+| Requirement         | Status |
+| ------------------- | ------ |
+| Product listing     | ✅      |
+| Product image       | ✅      |
+| Product name        | ✅      |
+| Pricing             | ✅      |
+| Product variants    | ✅      |
+| EMI options         | ✅      |
+| Product details     | ✅      |
+| EMI selection       | ✅      |
+| Proceed CTA         | ✅      |
+| Dynamic/mock API    | ✅      |
+| State management    | ✅      |
+| Loading state       | ✅      |
+| Error state         | ✅      |
+| Responsive UI       | ✅      |
+| Reusable components | ✅      |
+| GitHub deployment   | ✅      |
+
+## 👨‍💻 Author
+
+**Harsh Shrivastava**
+
+B.Tech — Information Technology
+
+GitHub: https://github.com/harsh-rjit
